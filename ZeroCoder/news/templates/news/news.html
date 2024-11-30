@@ -17,4 +17,13 @@
         гибкой структуры и эффективного управления данными.
     </p>
 </div>
+
+{% for new in news% }
+    <div>
+        <h3> {{ new.title }} </h3>
+        <p> {{ new.short_description }} </p>
+    </div>
+
+{% endfor %}
+
 {% endblock %}
