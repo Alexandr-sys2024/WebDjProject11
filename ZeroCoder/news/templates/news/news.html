@@ -5,25 +5,12 @@
 {% endblock %}
 
 {% block content %}
-<div class="container py-5">
-    <div class="text-center">
-        <h1 class="display-4 mb-4">Добро пожаловать на новостную страничку {{ caption }}</h1>
-        <h3 class="text-secondary mb-4">
-            {{ caption }} - это сайт, созданный с использованием Django — одного из самых популярных веб-фреймворков!
-        </h3>
-    </div>
-    <p class="lead">
-        Этот проект предназначен для обучения и демонстрации возможностей Django. Здесь вы найдёте примеры удобного интерфейса,
-        гибкой структуры и эффективного управления данными.
-    </p>
-</div>
 
-{% for new in news% }
+{% for new in news %}
     <div>
         <h3> {{ new.title }} </h3>
         <p> {{ new.short_description }} </p>
     </div>
-
 {% endfor %}
 
 {% endblock %}

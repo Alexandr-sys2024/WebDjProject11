@@ -18,12 +18,11 @@
     </p>
 </div>
 
-{% for new in news% }
+{% for new in news %}
     <div>
-        <h3>{{ new.title }}</h3>
-        <p>{{ new.short_description }}</p>
+        <h3> {{ new.title }} </h3>
+        <p> {{ new.short_description }} </p>
     </div>
-
 {% endfor %}
 
 {% endblock %}
